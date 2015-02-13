@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MozTopAlertView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+}
+
+- (IBAction)btn1Action:(id)sender {
+    [MozTopAlertView showWithType:MozAlertTypeInfo text:@"Info" parentView:self.view];
+}
+
+- (IBAction)btn2Action:(id)sender {
+    MozTopAlertView *alertView = [MozTopAlertView showWithType:MozAlertTypeSuccess text:@"Success" parentView:self.view];
+    alertView.dismissBlock = ^(){
+        NSLog(@"dismissBlock");
+    };
+}
+
+- (IBAction)btn3Action:(id)sender {
+    [MozTopAlertView showWithType:MozAlertTypeWarning text:@"Warning" doText:@"undo" doBlock:^{
+        
+    } parentView:self.view];
+}
+
+- (IBAction)btn4Action:(id)sender {
+    [MozTopAlertView showWithType:MozAlertTypeError text:@"Error" doText:@"undo" doBlock:^{
+        
+    } parentView:self.view];
 }
 
 - (void)didReceiveMemoryWarning {

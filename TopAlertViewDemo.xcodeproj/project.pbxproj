@@ -14,6 +14,11 @@
 		82C8E3CA1A8DE71C00A55423 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C8E3C91A8DE71C00A55423 /* Images.xcassets */; };
 		82C8E3CD1A8DE71C00A55423 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C8E3CB1A8DE71C00A55423 /* LaunchScreen.xib */; };
 		82C8E3D91A8DE71C00A55423 /* TopAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8E3D81A8DE71C00A55423 /* TopAlertViewDemoTests.m */; };
+		82C8E3E51A8DE7C900A55423 /* MozTopAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8E3E41A8DE7C900A55423 /* MozTopAlertView.m */; };
+		82C8E3EE1A8DF1B800A55423 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8E3E81A8DF1B800A55423 /* FAImageView.m */; };
+		82C8E3EF1A8DF1B800A55423 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82C8E3E91A8DF1B800A55423 /* FontAwesome.ttf */; };
+		82C8E3F01A8DF1B800A55423 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8E3EB1A8DF1B800A55423 /* NSString+FontAwesome.m */; };
+		82C8E3F11A8DF1B800A55423 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8E3ED1A8DF1B800A55423 /* UIFont+FontAwesome.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		82C8E3D21A8DE71C00A55423 /* TopAlertViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopAlertViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C8E3D71A8DE71C00A55423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82C8E3D81A8DE71C00A55423 /* TopAlertViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopAlertViewDemoTests.m; sourceTree = "<group>"; };
+		82C8E3E31A8DE7C900A55423 /* MozTopAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MozTopAlertView.h; sourceTree = "<group>"; };
+		82C8E3E41A8DE7C900A55423 /* MozTopAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MozTopAlertView.m; sourceTree = "<group>"; };
+		82C8E3E71A8DF1B800A55423 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		82C8E3E81A8DF1B800A55423 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		82C8E3E91A8DF1B800A55423 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		82C8E3EA1A8DF1B800A55423 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		82C8E3EB1A8DF1B800A55423 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		82C8E3EC1A8DF1B800A55423 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		82C8E3ED1A8DF1B800A55423 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		82C8E3BB1A8DE71C00A55423 /* TopAlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				82C8E3E21A8DE7C900A55423 /* TopAlertView */,
 				82C8E3C01A8DE71C00A55423 /* AppDelegate.h */,
 				82C8E3C11A8DE71C00A55423 /* AppDelegate.m */,
 				82C8E3C31A8DE71C00A55423 /* ViewController.h */,
@@ -117,6 +132,30 @@
 				82C8E3D71A8DE71C00A55423 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82C8E3E21A8DE7C900A55423 /* TopAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				82C8E3E61A8DF1B800A55423 /* fontawesome */,
+				82C8E3E31A8DE7C900A55423 /* MozTopAlertView.h */,
+				82C8E3E41A8DE7C900A55423 /* MozTopAlertView.m */,
+			);
+			path = TopAlertView;
+			sourceTree = "<group>";
+		};
+		82C8E3E61A8DF1B800A55423 /* fontawesome */ = {
+			isa = PBXGroup;
+			children = (
+				82C8E3E71A8DF1B800A55423 /* FAImageView.h */,
+				82C8E3E81A8DF1B800A55423 /* FAImageView.m */,
+				82C8E3E91A8DF1B800A55423 /* FontAwesome.ttf */,
+				82C8E3EA1A8DF1B800A55423 /* NSString+FontAwesome.h */,
+				82C8E3EB1A8DF1B800A55423 /* NSString+FontAwesome.m */,
+				82C8E3EC1A8DF1B800A55423 /* UIFont+FontAwesome.h */,
+				82C8E3ED1A8DF1B800A55423 /* UIFont+FontAwesome.m */,
+			);
+			path = fontawesome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +241,7 @@
 				82C8E3C81A8DE71C00A55423 /* Main.storyboard in Resources */,
 				82C8E3CD1A8DE71C00A55423 /* LaunchScreen.xib in Resources */,
 				82C8E3CA1A8DE71C00A55423 /* Images.xcassets in Resources */,
+				82C8E3EF1A8DF1B800A55423 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C8E3E51A8DE7C900A55423 /* MozTopAlertView.m in Sources */,
 				82C8E3C51A8DE71C00A55423 /* ViewController.m in Sources */,
+				82C8E3F01A8DF1B800A55423 /* NSString+FontAwesome.m in Sources */,
+				82C8E3EE1A8DF1B800A55423 /* FAImageView.m in Sources */,
+				82C8E3F11A8DF1B800A55423 /* UIFont+FontAwesome.m in Sources */,
 				82C8E3C21A8DE71C00A55423 /* AppDelegate.m in Sources */,
 				82C8E3BF1A8DE71C00A55423 /* main.m in Sources */,
 			);
