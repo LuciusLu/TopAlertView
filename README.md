@@ -2,7 +2,13 @@
 ![Alt text](/topalertview.gif)
 
 ---------------------------------------
+## import 
+**FontAwesome.ttf to Info.plist -> Fonts provided by application**
+
+---------------------------------------
 ## code
+    #import "MozTopAlertView.h"
+    
     [MozTopAlertView showWithType:MozAlertTypeInfo text:@"Info" parentView:self.view];
     
     MozTopAlertView *alertView = [MozTopAlertView showWithType:MozAlertTypeSuccess text:@"Success" parentView:self.view];
