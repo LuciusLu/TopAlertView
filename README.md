@@ -1,3 +1,5 @@
-### Thanks for 
-[id]:https://github.com/VAlexander/Chameleon "Chameleon"
-[id]:https://github.com/alexdrone/ios-fontawesome "ios-fontawesome"
+[Chameleon]: https://github.com/VAlexander/Chameleon    "sss"
+[ios-fontawesome]: https://github.com/alexdrone/ios-fontawesome
+
+
+[1]: http://google.com/        "Google" 
